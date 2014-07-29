@@ -1,6 +1,7 @@
-react-aspnet-demo
-=================
-Demo app with React and ASP.NET Web API.
+#react-aspnet
+
+Demo app built with React and ASP.NET Web API. 
+A minimalist implmentation of Flux architetcure is included in this version. An enhanced version of Flux is coming.
 
 ## Building the App
 
