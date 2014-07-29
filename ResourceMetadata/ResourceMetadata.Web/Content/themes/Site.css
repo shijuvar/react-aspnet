@@ -1,0 +1,209 @@
+﻿
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    .ui.form {
+        margin-left: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .ui.form {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .ui.form {
+        margin: 0 auto !important;
+        align-content: center;
+        width: 50%;
+    }
+
+    .ui.form .field {
+        width: 55% !important;
+    }
+}
+
+
+body {
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+}
+
+a {
+    color: #333;
+    outline: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-decoration: underline;
+}
+
+.ui.small.table.segment th, tr {
+    font-size: small;
+}
+
+.menu-container {
+    margin-bottom: 1rem;
+}
+
+.error-message {
+    color: #e80c4d;
+    padding: 5px;
+    font-size: .8em;
+}
+
+
+
+input.ng-invalid-required {
+    border-left: 5px solid #e80c4d !important;
+}
+
+select.ng-invalid-required {
+    border-left: 5px solid #e80c4d !important;
+}
+
+input.ng-valid-required {
+    border-left: 5px solid #6ECFF5 !important;
+}
+
+input.ng-invalid-email,
+input.ng-invalid-email:focus {
+    border-left: 5px solid #e80c4d !important;
+}
+
+input.ng-invalid-minlength,
+input.ng-invalid-minlength:focus {
+    border-left: 5px solid #e80c4d !important;
+}
+
+textarea.ng-valid-required {
+    border-left: 5px solid #6ECFF5 !important;
+}
+
+input:focus {
+    border-left: 5px solid #6ECFF5 !important;
+    box-shadow: none !important;
+    border-bottom-left-radius: .325em !important;
+    border-top-left-radius: .325em !important;
+}
+
+input.ng-invalid-required:focus {
+    border-left: 5px solid #e80c4d !important;
+    box-shadow: none !important;
+    border-bottom-left-radius: .325em !important;
+    border-top-left-radius: .325em !important;
+}
+
+
+textarea.ng-invalid-required {
+    border-left: 5px solid #e80c4d !important;
+    box-shadow: none !important;
+    border-bottom-left-radius: .325em !important;
+    border-top-left-radius: .325em !important;
+}
+
+textarea.ng-invalid-required:focus {
+    border-left: 5px solid #e80c4d !important;
+}
+
+textarea:focus {
+    border-left: 5px solid #6ECFF5 !important;
+    box-shadow: none !important;
+    border-bottom-left-radius: .325em !important;
+    border-top-left-radius: .325em !important;
+}
+
+
+
+textarea {
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.validation-summary-errors > ul {
+    list-style-type: none !important;
+    color: red;
+}
+
+.field-validation-error {
+    color: red;
+}
+
+.input-validation-error {
+    border-left: 5px solid #e80c4d !important;
+}
+
+.input-validation-error:focus {
+    border-left: 5px solid #e80c4d !important;
+}
+
+
+.field-error {
+    color: #e80c4d;
+}
+
+.ui.modal {
+    width: 58%;
+    margin-left: -29%;
+}
+
+    .ui.modal > .header {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        margin: 0em;
+        padding: 1em 1em;
+        font-size: 1em;
+        font-weight: bold;
+        -webkit-border-radius: 0.325em 0.325em 0px 0px;
+        -moz-border-radius: 0.325em 0.325em 0px 0px;
+        border-radius: 0.325em 0.325em 0px 0px;
+    }
+
+    .ui.modal > .content {
+        font-size: .9em;
+        display: table;
+        width: 100%;
+        position: relative;
+        padding: 1em;
+        background-color: #F4F4F4;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+    .pagination > li {
+        display: inline;
+    }
+
+        .pagination > li > a, .pagination > li > span {
+            position: relative;
+            float: left;
+            padding: 6px 12px;
+            margin-left: -1px;
+            line-height: 1.428571429;
+            text-decoration: none;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            color: #428bca;
+        }
+
+    .pagination > .disabled > span, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+        color: #999;
+        cursor: not-allowed;
+        background-color: #fff;
+        border-color: #ddd;
+    }
+    

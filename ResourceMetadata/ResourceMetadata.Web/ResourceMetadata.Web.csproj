@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EFA37586-5B1F-4A0B-800F-6D6ED317301F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ResourceMetadata.Web</RootNamespace>
+    <AssemblyName>ResourceMetadata.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\actions\AccountActions.js" />
+    <Content Include="app\actions\ActivityActions.js" />
+    <Content Include="app\actions\ResourceActions.js" />
+    <Content Include="app\components\ActivityAddPage.js" />
+    <Content Include="app\components\ActivityGridItem.js" />
+    <Content Include="app\components\ActivityItem.js" />
+    <Content Include="app\components\ConfirmationModal.js" />
+    <Content Include="app\components\DatePicker.js" />
+    <Content Include="app\components\InformationModal.js" />
+    <Content Include="app\components\LoadingIndicator.js" />
+    <Content Include="app\components\LocationTableRow.js" />
+    <Content Include="app\components\RegistrationPage.js" />
+    <Content Include="app\components\RequiredPassword.js" />
+    <Content Include="app\components\ResourceAddPage.js" />
+    <Content Include="app\components\ResourceDetailsPage.js" />
+    <Content Include="app\components\ResourceEditPage.js" />
+    <Content Include="app\components\ResourceForm.js" />
+    <Content Include="app\components\ResourceTableRow.js" />
+    <Content Include="app\components\Select2.js" />
+    <Content Include="app\prod\LoadingIndicator.js" />
+    <Content Include="app\stores\AccountStore.js" />
+    <Content Include="app\stores\ActivityStore.js" />
+    <Content Include="app\stores\ResourceStore.js" />
+    <Content Include="Content\fonts\basic.icons.eot" />
+    <Content Include="Content\fonts\basic.icons.ttf" />
+    <Content Include="Content\fonts\basic.icons.woff" />
+    <Content Include="Content\fonts\icons.eot" />
+    <Content Include="Content\fonts\icons.otf" />
+    <Content Include="Content\fonts\icons.ttf" />
+    <Content Include="Content\fonts\icons.woff" />
+    <Content Include="package.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\actions\LocationActions.js" />
+    <Content Include="app\components\ActivitiesPage.js" />
+    <Content Include="app\components\app.js" />
+    <Content Include="app\components\AppContainer.js" />
+    <Content Include="app\components\ContentRouter.js" />
+    <Content Include="app\components\DeleteIcon.js" />
+    <Content Include="app\components\EditIconLink.js" />
+    <Content Include="app\components\Footer.js" />
+    <Content Include="app\components\Header.js" />
+    <Content Include="app\components\HomePage.js" />
+    <Content Include="app\components\LocationAddPage.js" />
+    <Content Include="app\components\LocationEditPage.js" />
+    <Content Include="app\components\LocationForm.js" />
+    <Content Include="app\components\LocationsPage.js" />
+    <Content Include="app\components\LoginPage.js" />
+    <Content Include="app\components\NavigationRouter.js" />
+    <Content Include="app\components\NavLink.js" />
+    <Content Include="app\components\NotFoundPage.js" />
+    <Content Include="app\components\RequiredEmail.js" />
+    <Content Include="app\components\RequiredTextArea.js" />
+    <Content Include="app\components\RequiredTextbox.js" />
+    <Content Include="app\components\ResourcesPage.js" />
+    <Content Include="app\constants\AppConstants.js" />
+    <Content Include="app\dispatchers\AppDispatcher.js" />
+    <Content Include="app\prod\ActivitiesPage.js" />
+    <Content Include="app\prod\app.js" />
+    <Content Include="app\prod\AppContainer.js" />
+    <Content Include="app\prod\ContentRouter.js" />
+    <Content Include="app\prod\DeleteIcon.js" />
+    <Content Include="app\prod\EditIconLink.js" />
+    <Content Include="app\prod\Footer.js" />
+    <Content Include="app\prod\Header.js" />
+    <Content Include="app\prod\HomePage.js" />
+    <Content Include="app\prod\LocationAddPage.js" />
+    <Content Include="app\prod\LocationEditPage.js" />
+    <Content Include="app\prod\LocationForm.js" />
+    <Content Include="app\prod\LocationsPage.js" />
+    <Content Include="app\prod\LoginPage.js" />
+    <Content Include="app\prod\NavigationRouter.js" />
+    <Content Include="app\prod\NavLink.js" />
+    <Content Include="app\prod\NotFoundPage.js" />
+    <Content Include="app\prod\RequiredEmail.js" />
+    <Content Include="app\prod\RequiredTextArea.js" />
+    <Content Include="app\prod\RequiredTextbox.js" />
+    <Content Include="app\prod\ResourcesPage.js" />
+    <Content Include="app\stores\ApplicationStore.js" />
+    <Content Include="app\stores\LocationStore.js" />
+    <Content Include="bundle.js" />
+    <Content Include="config.js" />
+    <Content Include="Content\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\fonts\basic.icons.svg" />
+    <Content Include="Content\fonts\icons.svg" />
+    <Content Include="Content\images\loader-large-inverted.gif" />
+    <Content Include="Content\images\loader-large.gif" />
+    <Content Include="Content\images\loader-medium-inverted.gif" />
+    <Content Include="Content\images\loader-medium.gif" />
+    <Content Include="Content\images\loader-mini-inverted.gif" />
+    <Content Include="Content\images\loader-mini.gif" />
+    <Content Include="Content\images\loader-small-inverted.gif" />
+    <Content Include="Content\images\loader-small.gif" />
+    <Content Include="Content\select2\select2-spinner.gif" />
+    <Content Include="Content\select2\select2.css" />
+    <Content Include="Content\select2\select2.min.css" />
+    <Content Include="Content\select2\select2.png" />
+    <Content Include="Content\semantic\semantic.css" />
+    <Content Include="Content\semantic\semantic.min.css" />
+    <Content Include="Content\smoothness\images\loading.gif" />
+    <Content Include="Content\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\smoothness\jquery-ui.min.css" />
+    <Content Include="Content\themes\Site.css" />
+    <Content Include="Content\themes\Site.min.css" />
+    <Content Include="gulpfile.js" />
+    <Content Include="Index.html" />
+    <None Include="Scripts\_references.js" />
+    <Content Include="Scripts\select2.js" />
+    <Content Include="Scripts\semantic.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\mixins\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58713</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:9043/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

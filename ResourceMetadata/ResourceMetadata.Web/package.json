@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "gulp": "~3.6.2",
+    "wolfy-eventemitter": "~0.1.0",
+    "browserify": "~4.1.5",
+    "gulp-react": "~0.3.3",
+    "jquery-browserify": "~1.8.1",
+    "envify": "~1.2.1",
+    "react": "~0.10.0",
+    "gulp-clean": "~0.3.0",
+    "gulp-browserify": "~0.5.0",
+    "gulp-rename": "~1.2.0",
+    "react-addons": "~0.9.0",
+    "react-router-component": "~0.18.3",
+    "select2-browserify": "~3.4.5",
+    "jquery-ui-browserify": "~1.11.0-pre-seelio",
+    "browserify-shim": "~3.6.0"
+  }
+}
