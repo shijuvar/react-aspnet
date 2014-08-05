@@ -2,8 +2,10 @@
 var ApplicationStore = require('./ApplicationStore');
 var AppDispatcher = require('../dispatchers/AppDispatcher');
 var AppConstants = require('../constants/AppConstants');
+var config = require('../../config');
 
-var resourceUrl = "http://localhost:7818/api/Resources";
+var resourceUrl = config.apiurl + "Resources";
+var activitiesUrl = config.apiurl + "Activities";
 
 var getResources = function () {
     var successCallback = function (data, statusText, xhr) {
@@ -142,7 +144,7 @@ function removeResourceActivity(id) {
                     break;
                 }
             }
-            if (index) {
+            if (index >= 0) {
                 activites.splice(index, 1);
             }
         }
@@ -157,7 +159,7 @@ function removeResourceActivity(id) {
     }
 
 
-    ResourceStore.delete("http://localhost:7818/api/Activities/" + id, successCallback, failureCallback);
+    ResourceStore.delete(activitiesUrl + "/" + id, successCallback, failureCallback);
 }
 
 function getTopFiveResources() {

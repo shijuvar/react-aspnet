@@ -2,12 +2,14 @@
 var ApplicationStore = require('./ApplicationStore');
 var AppDispatcher = require('../dispatchers/AppDispatcher');
 var AppConstants = require('../constants/AppConstants');
+var config = require('../../config');
 
-var accountUrl = "http://localhost:7818/api/Account";
+var accountUrl = config.apiurl + "Account";
+var loginUrl = config.loginurl;
 
 var login = function (login) {
     var entity = AccountStore.buildFormData(login);
-    $.post("http://localhost:7818/Token", entity).done(function (data, statusText, xhr) {
+    $.post(loginUrl, entity).done(function (data, statusText, xhr) {
         ApplicationStore.AccessToken = data.access_token;
         this.Entity = { Data: null, Status: AppConstants.RETRIEVED };
         this.emit(AppConstants.STORE_CHANGE);

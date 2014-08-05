@@ -4,8 +4,9 @@ var $ = require('jquery-browserify');
 var ApplicationStore = require('./ApplicationStore');
 var AppDispatcher = require('../dispatchers/AppDispatcher');
 var AppConstants = require('../constants/AppConstants');
+var config = require('../../config');
 
-var locationUrl = "http://localhost:7818/api/Locations"; 
+var locationUrl = config.apiurl + "Locations";
 
 var getLocations = function () {
     var successCallback = function (data, statusText, xhr) {
@@ -77,7 +78,7 @@ var updateLocation = function (location) {
     }.bind(LocationStore);
 
     var failureCallback = function (xhr) {
-        this.Error = { Message: "An error occured while updating the location. Please try after some time", StatusCode: xhr.status };        
+        this.Error = { Message: "An error occured while updating the location. Please try after some time", StatusCode: xhr.status };
         this.emit(AppConstants.STORE_ERROR);
     }.bind(LocationStore);
 
@@ -119,10 +120,10 @@ var LocationStore = function () {
     store.Status = "";
     store.Location = {};
     store.getLocationsState = function () {
-        return { Locations: this.Locations};
+        return { Locations: this.Locations };
     };
     store.getLocationState = function () {
-        return { Location: this.Location, Status:this.Status };
+        return { Location: this.Location, Status: this.Status };
     };
     store.getErrorState = function () {
         return this.Error;

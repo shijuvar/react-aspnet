@@ -2,8 +2,6 @@
 var $ = require('jquery-browserify');
 var AppConstants = require("../constants/AppConstants");
 
-
-
 var ApplicationStore = function () {
     this.AccessToken = ""; //to be set from Account Login
 };

@@ -2,7 +2,9 @@
 var ApplicationStore = require('./ApplicationStore');
 var AppDispatcher = require('../dispatchers/AppDispatcher');
 var AppConstants = require('../constants/AppConstants');
+var config = require('../../config');
 
+var resourceUrl = config.apiurl + 'Resources/';
 
 function addActivity(activity) {
 
@@ -22,7 +24,7 @@ function addActivity(activity) {
         ActivityStore.emit(AppConstants.STORE_ERROR);
     };
 
-    ActivityStore.postJson("http://localhost:7818/api/Resources/" + activity.ResourceId + "/Activities", activity, successCallback, failureCallback);
+    ActivityStore.postJson(resourceUrl + activity.ResourceId + "/Activities", activity, successCallback, failureCallback);
 };
 
 var ActivityStore = function () {

@@ -47,6 +47,7 @@ var ResourceDetailsPage = React.createClass({
     handleDelete: function(activity){
         if (confirm("Do you really want to remove this activity?")) {
             ActivityActions.deleteActivity(activity.Id);
+            this.setState({Loading:true});
         }
         return false;
     },
