@@ -63,11 +63,11 @@ namespace ResourceMetadata.Data
 
                 var user = new ApplicationUser();
                 user.FirstName = "Admin";
-                user.LastName = "Marlabs";
-                user.Email = "admin@marlabs.com";
-                user.UserName = "admin@marlabs.com";
+                user.LastName = "Shiju";
+                user.Email = "admin@shijuvar.com";
+                user.UserName = "admin@shijuvar.com";
 
-                var userResult = userManager.Create(user, "Marlabs");
+                var userResult = userManager.Create(user, "Shijuvar");
 
                 if (userResult.Succeeded)
                 {
