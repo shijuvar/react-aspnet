@@ -43,7 +43,7 @@ namespace ResourceMetadata.API.Controllers
         }
 
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public IHttpActionResult Post(LocationViewModel location)
         {
             Location entity = new Location();
@@ -54,7 +54,7 @@ namespace ResourceMetadata.API.Controllers
             return Created(Url.Link("DefaultApi", new { controller = "Locations", id = location.Id }), location);
         }
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public IHttpActionResult Put(int id, LocationViewModel locationViewModel)
         {
             locationViewModel.Id = id;
