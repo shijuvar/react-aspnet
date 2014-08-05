@@ -172,3 +172,6 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+
+ResourceMetadata/ResourceMetadata.Web/app/prod/*.js
+bundle.js
