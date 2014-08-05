@@ -64,7 +64,7 @@ namespace ResourceMetadata.API.Controllers
             return Ok(locationViewModel);
         }
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public IHttpActionResult Delete(int id)
         {
             locationService.DeleteLocation(id);
