@@ -17,3 +17,15 @@ A minimalist implmentation of Flux architetcure is included in this version. An 
     1. Run commands **gulp react** then **gulp browserify**.
     2. In order to clean the destination files created by build task, run **gulp clean**.
 
+
+
+## About the sample App
+
+The ReactJS app named "ResourceMetadata.Web" lets the users store metadata of the resources (articles, github repositories, files on the local computer etc.) with a priority. Based on the priority, users can follow the resources and add activities against the resources.
+
+The following are the functionalities of the ResourceMetadata:
+
+1. Register user to the application
+2. Create locations (eg: github, MyComputer, Artciles ect) for adding resources
+3. Add resources against a location
+4. Add activities against resources.
