@@ -1,7 +1,12 @@
-#react-aspnet
+#react-aspnet v0.5.0
 
 Demo app built with React and ASP.NET Web API. 
 A minimalist implmentation of Flux architetcure is included in this version. An enhanced version of Flux is coming.
+
+####Suggestions for Flux implemenattaions 
+We are evaluating different frameworks implementing Flux. If you have any suggestions for Flux implementation or any framework implementing Flux, please add your recommendations to the issue list. We would greatly appreciate it if you could contribute to the Flux implemenattion.
+
+
 
 ## Building the App
 
