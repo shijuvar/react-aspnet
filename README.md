@@ -3,11 +3,6 @@
 Demo app built with React and ASP.NET Web API. 
 A minimalist implmentation of Flux architetcure is included in this version. An enhanced version of Flux is coming.
 
-####Suggestions for Flux implementations and frameworks 
-We are evaluating different frameworks for implementing a better Flux architecture. If you have any suggestions for Flux implementation or any framework for implementing Flux, please add your recommendations to the issue list. We would greatly appreciate it if you could contribute to the Flux implementation.
-
-
-
 ## Building the App
 
       
@@ -34,3 +29,8 @@ The following are the functionalities of the ResourceMetadata:
 2. Create locations (eg: github, MyComputer, Artciles ect) for adding resources
 3. Add resources against a location
 4. Add activities against resources.
+
+
+## Team
+* [Shiju Varghese](https://github.com/shijuvar) - Architect
+* [Dileep C.D.](https://github.com/DileepCD) - Lead Developer and Core Committer
