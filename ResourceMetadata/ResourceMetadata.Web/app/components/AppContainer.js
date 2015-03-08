@@ -2,9 +2,9 @@
 
 var React = require('react');
 var Router = require('react-router-component');
-var Header = require('./Header');
-var Footer = require('./Footer');
-var ContentRouter = require('./ContentRouter');
+var Header = require('app/components/Header');
+var Footer = require('app/components/Footer');
+var ContentRouter = require('app/components/ContentRouter');
 var AppContainer = React.createClass({ 
    
     routeHandler:function(){

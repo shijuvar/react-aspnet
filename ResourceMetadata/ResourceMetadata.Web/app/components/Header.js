@@ -2,9 +2,9 @@
 
 var React = require('react');
 var Router = require('react-router-component');
-var NavLink =require('./NavLink');
-var AccountStore = require("../stores/AccountStore");
-var AccountActions = require('../actions/AccountActions');
+var NavLink =require('app/components/NavLink');
+var AccountStore = require("app/stores/AccountStore");
+var AccountActions = require('app/actions/AccountActions');
 
 var Header = React.createClass({
     mixins:[Router.NavigatableMixin],

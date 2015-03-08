@@ -1,8 +1,8 @@
 ﻿/** @jsx React.DOM */
 
 var React = require("react");
-var EditIconLink = require('./EditIconLink');
-var DeleteIcon = require('./DeleteIcon');
+var EditIconLink = require('app/components/EditIconLink');
+var DeleteIcon = require('app/components/DeleteIcon');
 
 var LocationTableRow = React.createClass({
     handleDelete:function(){

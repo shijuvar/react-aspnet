@@ -2,8 +2,8 @@
 
 var React = require('react');
 var Router = require('react-router-component');
-var RequiredTextbox = require('./RequiredTextbox');
-var RequiredTextArea = require('./RequiredTextArea');
+var RequiredTextbox = require('app/components/RequiredTextbox');
+var RequiredTextArea = require('app/components/RequiredTextArea');
 
 var LocationForm = React.createClass({
     

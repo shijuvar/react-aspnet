@@ -2,12 +2,12 @@
 
 var React = require('react');
 var Router = require('react-router-component');
-var LocationStore = require('../stores/LocationStore');
+var LocationStore = require('app/stores/LocationStore');
 var $ = require('jquery-browserify'); 
-var LoadingIndicator = require('./LoadingIndicator');
-var LocationTableRow = require('./LocationTableRow');
-var ConfirmationModal = require('./ConfirmationModal');
-var LocationActions = require('../actions/LocationActions');
+var LoadingIndicator = require('app/components/LoadingIndicator');
+var LocationTableRow = require('app/components/LocationTableRow');
+var ConfirmationModal = require('app/components/ConfirmationModal');
+var LocationActions = require('app/actions/LocationActions');
 
 
 var LocationsPage = React.createClass({

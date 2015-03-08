@@ -1,10 +1,15 @@
 ﻿/** @jsx React.DOM */
 
 var React = require('react');
-var NavigationRouter = require('./NavigationRouter');
+var NavigationRouter = require('app/components/NavigationRouter');
+
+console.log("app.js file starting execution...");
 
 if (window) {
+    console.log("window === true...");
     window.onload = function(){
-        React.renderComponent(<NavigationRouter />,document.getElementById("content"));
+        console.log("window.onload.....");
+        React.render(<NavigationRouter />,document.getElementById("content"));
     }
 }
+ 

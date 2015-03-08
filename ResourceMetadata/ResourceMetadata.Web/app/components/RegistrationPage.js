@@ -3,12 +3,12 @@
 var React = require('react');
 var Router = require('react-router-component');
 
-var RequiredEmail = require('./RequiredEmail');
-var RequiredTextbox = require('./RequiredTextbox');
-var LoadingIndicator = require('./LoadingIndicator');
+var RequiredEmail = require('app/components/RequiredEmail');
+var RequiredTextbox = require('app/components/RequiredTextbox');
+var LoadingIndicator = require('app/components/LoadingIndicator');
 
-var AccountStore = require('../stores/AccountStore');
-var AccountActions = require('../actions/AccountActions');
+var AccountStore = require('app/stores/AccountStore');
+var AccountActions = require('app/actions/AccountActions');
 
 var RegistrationPage = React.createClass({
     mixins:[Router.NavigatableMixin],

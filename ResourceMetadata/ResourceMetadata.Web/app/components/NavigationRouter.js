@@ -2,10 +2,10 @@
 
 var React = require('react');
 var Router = require('react-router-component');
-var Header =require('./Header');
-var AppContainer = require('./AppContainer');
-var LoginPage = require('./LoginPage');
-var RegistrationPage = require('./RegistrationPage');
+var Header =require('app/components/Header');
+var AppContainer = require('app/components/AppContainer');
+var LoginPage = require('app/components/LoginPage');
+var RegistrationPage = require('app/components/RegistrationPage');
 var NotFound = Router.NotFound;
 
 var Locations = Router.Locations;

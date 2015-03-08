@@ -2,11 +2,11 @@
 
 var React = require('react');
 var Router= require('react-router-component');
-var RequiredEmail = require('./RequiredEmail');
-var RequiredTextbox = require('./RequiredTextbox');
-var LoadingIndicator =  require('./LoadingIndicator');
-var AccountActions = require('../actions/AccountActions');
-var AccountStore =  require('../stores/AccountStore');
+var RequiredEmail = require('app/components/RequiredEmail');
+var RequiredTextbox = require('app/components/RequiredTextbox');
+var LoadingIndicator =  require('app/components/LoadingIndicator');
+var AccountActions = require('app/actions/AccountActions');
+var AccountStore =  require('app/stores/AccountStore');
 
 var LoginPage = React.createClass({
     mixins:[Router.NavigatableMixin],
@@ -49,7 +49,7 @@ var LoginPage = React.createClass({
         var Link = Router.Link;
 
         var containerStyle ={
-            "margin-top":"75px"
+            "marginTop":"75px"
         }
 
         var requiredSpanStyle ={

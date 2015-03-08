@@ -2,10 +2,10 @@
 
 var React = require('react');
 var Router = require('react-router-component');
-var ResourceStore = require('../stores/ResourceStore');
+var ResourceStore = require('app/stores/ResourceStore');
 var $ = require('jquery-browserify'); 
-var LoadingIndicator = require('./LoadingIndicator');
-var ResourceActions = require('../actions/ResourceActions');
+var LoadingIndicator = require('app/components/LoadingIndicator');
+var ResourceActions = require('app/actions/ResourceActions');
 
 
 var HomePage = React.createClass({

@@ -1,19 +1,27 @@
 {
+  "name": "ResourceMetadata.Web",
+  "version": "1.0.0",
+  "description": "Reference application for facebook react ",
+  "main": "bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
   "devDependencies": {
-    "gulp": "~3.6.2",
-    "wolfy-eventemitter": "~0.1.0",
-    "browserify": "~4.1.5",
-    "gulp-react": "~0.3.3",
-    "jquery-browserify": "~1.8.1",
-    "envify": "~1.2.1",
-    "react": "~0.10.0",
-    "gulp-clean": "~0.3.0",
-    "gulp-browserify": "~0.5.0",
-    "gulp-rename": "~1.2.0",
-    "react-addons": "~0.9.0",
-    "react-router-component": "~0.18.3",
-    "select2-browserify": "~3.4.5",
-    "jquery-ui-browserify": "~1.11.0-pre-seelio",
-    "browserify-shim": "~3.6.0"
+    "browserify": "^9.0.3",
+    "gulp": "^3.8.11",
+    "gulp-clean": "^0.3.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-symlink": "^2.1.0",
+    "jquery-browserify": "^1.8.1",
+    "jquery-ui-browserify": "^1.11.0-pre-seelio",
+    "react": "^0.12.2",
+    "react-addons": "^0.9.1-deprecated",
+    "react-async": "^2.0.1",
+    "react-router-component": "^0.24.1",
+    "reactify": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "wolfy-eventemitter": "^0.1.0"
   }
 }

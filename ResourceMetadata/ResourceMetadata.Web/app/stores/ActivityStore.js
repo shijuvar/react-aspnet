@@ -1,8 +1,8 @@
 ﻿var $ = require('jquery-browserify');
-var ApplicationStore = require('./ApplicationStore');
-var AppDispatcher = require('../dispatchers/AppDispatcher');
-var AppConstants = require('../constants/AppConstants');
-var config = require('../../config');
+var ApplicationStore = require('app/stores/ApplicationStore');
+var AppDispatcher = require('app/dispatchers/AppDispatcher');
+var AppConstants = require('app/constants/AppConstants');
+var config = require('../../../config');
 
 var resourceUrl = config.apiurl + 'Resources/';
 

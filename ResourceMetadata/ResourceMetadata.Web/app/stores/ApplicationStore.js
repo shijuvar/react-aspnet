@@ -1,6 +1,6 @@
 ﻿var EventEmitter = require('events').EventEmitter;
 var $ = require('jquery-browserify');
-var AppConstants = require("../constants/AppConstants");
+var AppConstants = require("app/constants/AppConstants");
 
 var ApplicationStore = function () {
     this.AccessToken = ""; //to be set from Account Login

@@ -2,14 +2,14 @@
 
 var React = require('react');
 var Router = require('react-router-component'); 
-var LoadingIndicator = require('./LoadingIndicator');
-var ResourceForm = require('./ResourceForm');
+var LoadingIndicator = require('app/components/LoadingIndicator');
+var ResourceForm = require('app/components/ResourceForm');
 
-var LocationStore = require("../stores/LocationStore");
-var ResourceStore = require("../stores/ResourceStore");
-var LocationActions = require('../actions/LocationActions');
-var ResourceActions = require('../actions/ResourceActions');
-var AppConstants = require('../constants/AppConstants');
+var LocationStore = require("app/stores/LocationStore");
+var ResourceStore = require("app/stores/ResourceStore");
+var LocationActions = require('app/actions/LocationActions');
+var ResourceActions = require('app/actions/ResourceActions');
+var AppConstants = require('app/constants/AppConstants');
 
 var ResourceAddPage = React.createClass({
     mixins:[Router.NavigatableMixin],

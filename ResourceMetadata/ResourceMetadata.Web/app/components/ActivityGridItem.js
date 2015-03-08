@@ -1,8 +1,8 @@
 ﻿/**@jsx React.DOM*/
 
 var React = require('react');
-var ActivityItem = require('./ActivityItem');
-var DeleteIcon = require('./DeleteIcon');
+var ActivityItem = require('app/components/ActivityItem');
+var DeleteIcon = require('app/components/DeleteIcon');
 
 var ActivityGridItem = React.createClass({
     handleDelete: function(){

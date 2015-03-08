@@ -2,11 +2,11 @@
 
 var React = require('react');
 var Router = require('react-router-component');
-var AppConstants = require("../constants/AppConstants");
-var LocationForm = require("./LocationForm");
-var LoadingIndicator = require("./LoadingIndicator");
-var LocationStore = require('../stores/LocationStore');
-var LocationActions = require('../actions/LocationActions');
+var AppConstants = require("app/constants/AppConstants");
+var LocationForm = require("app/components/LocationForm");
+var LoadingIndicator = require("app/components/LoadingIndicator");
+var LocationStore = require('app/stores/LocationStore');
+var LocationActions = require('app/actions/LocationActions');
 
 var LocationEditPage = React.createClass({
     mixins: [Router.NavigatableMixin],

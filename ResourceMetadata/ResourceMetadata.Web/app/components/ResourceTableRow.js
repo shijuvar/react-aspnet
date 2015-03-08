@@ -2,8 +2,8 @@
 
 var React = require("react");
 var Router = require('react-router-component');
-var EditIconLink = require('./EditIconLink');
-var DeleteIcon = require('./DeleteIcon');
+var EditIconLink = require('app/components/EditIconLink');
+var DeleteIcon = require('app/components/DeleteIcon');
 
 var ResourceTableRow = React.createClass({
     handleDelete:function(){

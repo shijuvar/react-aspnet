@@ -76,7 +76,6 @@
     <Content Include="app\components\ResourceForm.js" />
     <Content Include="app\components\ResourceTableRow.js" />
     <Content Include="app\components\Select2.js" />
-    <Content Include="app\prod\LoadingIndicator.js" />
     <Content Include="app\stores\AccountStore.js" />
     <Content Include="app\stores\ActivityStore.js" />
     <Content Include="app\stores\ResourceStore.js" />
@@ -120,30 +119,8 @@
     <Content Include="app\components\ResourcesPage.js" />
     <Content Include="app\constants\AppConstants.js" />
     <Content Include="app\dispatchers\AppDispatcher.js" />
-    <Content Include="app\prod\ActivitiesPage.js" />
-    <Content Include="app\prod\app.js" />
-    <Content Include="app\prod\AppContainer.js" />
-    <Content Include="app\prod\ContentRouter.js" />
-    <Content Include="app\prod\DeleteIcon.js" />
-    <Content Include="app\prod\EditIconLink.js" />
-    <Content Include="app\prod\Footer.js" />
-    <Content Include="app\prod\Header.js" />
-    <Content Include="app\prod\HomePage.js" />
-    <Content Include="app\prod\LocationAddPage.js" />
-    <Content Include="app\prod\LocationEditPage.js" />
-    <Content Include="app\prod\LocationForm.js" />
-    <Content Include="app\prod\LocationsPage.js" />
-    <Content Include="app\prod\LoginPage.js" />
-    <Content Include="app\prod\NavigationRouter.js" />
-    <Content Include="app\prod\NavLink.js" />
-    <Content Include="app\prod\NotFoundPage.js" />
-    <Content Include="app\prod\RequiredEmail.js" />
-    <Content Include="app\prod\RequiredTextArea.js" />
-    <Content Include="app\prod\RequiredTextbox.js" />
-    <Content Include="app\prod\ResourcesPage.js" />
     <Content Include="app\stores\ApplicationStore.js" />
     <Content Include="app\stores\LocationStore.js" />
-    <Content Include="bundle.js" />
     <Content Include="config.js" />
     <Content Include="Content\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -207,7 +184,6 @@
     <Content Include="gulpfile.js" />
     <Content Include="Index.html" />
     <None Include="Scripts\_references.js" />
-    <Content Include="Scripts\select2.js" />
     <Content Include="Scripts\semantic.js" />
     <Content Include="Web.config" />
   </ItemGroup>

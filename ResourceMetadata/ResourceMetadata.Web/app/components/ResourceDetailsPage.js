@@ -3,13 +3,13 @@
 var React = require('react');
 var Router = require('react-router-component');
 
-var LoadingIndicator = require('./LoadingIndicator');
-var ActivityGridItem = require('./ActivityGridItem'); 
+var LoadingIndicator = require('app/components/LoadingIndicator');
+var ActivityGridItem = require('app/components/ActivityGridItem'); 
 
-var ResourceActions = require('../actions/ResourceActions');
-var ActivityActions = require('../actions/ActivityActions');
-var AppConstants = require('../constants/AppConstants');
-var ResourceStore = require("../stores/ResourceStore"); 
+var ResourceActions = require('app/actions/ResourceActions');
+var ActivityActions = require('app/actions/ActivityActions');
+var AppConstants = require('app/constants/AppConstants');
+var ResourceStore = require("app/stores/ResourceStore"); 
 
 var ResourceDetailsPage = React.createClass({
 

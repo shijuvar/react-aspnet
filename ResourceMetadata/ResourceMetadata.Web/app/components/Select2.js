@@ -1,21 +1,22 @@
 ﻿/**@jsx React.DOM*/
 
-var React = require('react');
-var $ = require('jquery-browserify');
-var select2 = require('select2-browserify');
+var React = require('react'); 
 
-var Select2 = React.createClass({
-    componentDidMount: function(){
-        var node = this.getDOMNode();
-        $(node).select2();
-    },
+var Select2 = React.createClass({ 
     getInitialState: function(){
         return {value : this.props.value, valid: this.props.value && this.props.value.length > 0};
     },
     onChange: function(e){
         this.setState({value:e.target.value, valid : e.target.value.length > 0});
     },
-    render: function () {
+    render: function () { 
+
+        var styles ={
+            width: '100%',
+            padding: 5,
+            borderRadius: 3,
+            border: '1 solid rgba(0, 0, 0, 0.15)'
+        };
 
         var options = function(component){
             if (component.props && component.props.data) {
@@ -25,11 +26,9 @@ var Select2 = React.createClass({
             }
 
             return ;
-        }(this);
-        
+        }(this); 
 
-
-        return this.transferPropsTo(<select value={this.state.value} onChange={this.onChange}><option value="">--Select--</option>{options}</select>);
+        return this.transferPropsTo(<select style={styles} value={this.state.value} onChange={this.onChange}><option value="">--Select--</option>{options}</select>);
 }
 });
 

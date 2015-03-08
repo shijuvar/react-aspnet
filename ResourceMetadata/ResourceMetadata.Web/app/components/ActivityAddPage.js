@@ -2,12 +2,12 @@
 
 var React = require('react');
 var Router = require('react-router-component');
-var RequiredTextbox = require('./RequiredTextbox');
-var RequiredTextArea = require('./RequiredTextArea');
-var DatePicker = require('./DatePicker');
+var RequiredTextbox = require('app/components/RequiredTextbox');
+var RequiredTextArea = require('app/components/RequiredTextArea');
+var DatePicker = require('app/components/DatePicker');
 
-var ActivityActions = require("../actions/ActivityActions");
-var ActivityStore = require("../stores/ActivityStore");
+var ActivityActions = require("app/actions/ActivityActions");
+var ActivityStore = require("app/stores/ActivityStore");
 
 var ActivityAddPage = React.createClass({
     mixins:[Router.NavigatableMixin],
@@ -89,7 +89,7 @@ var ActivityAddPage = React.createClass({
          </label>
          <DatePicker ref="activityDate" maxDate="0" required="true" placeholder="Activity Date" />                
          </div><div className="ui divider"></div>
-         <div className="inline-field">
+         <div className="inline field">
           <button
         className="ui blue mini button">
     Submit

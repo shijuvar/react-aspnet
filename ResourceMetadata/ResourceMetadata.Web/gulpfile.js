@@ -1,8 +1,10 @@
+var browserify = require('browserify');
 var gulp = require('gulp');
-var clean = require('gulp-clean');
-var react = require('gulp-react');
-var browserify = require('gulp-browserify');
+var source = require("vinyl-source-stream");
+var reactify = require('reactify');
+var symlink = require('gulp-symlink');
 var rename = require('gulp-rename');
+var clean = require('gulp-clean');
 
 gulp.task('clean', function () {
     return gulp.src(['./app/prod/**/*.js','bundle.js'], { read: false })
@@ -10,18 +12,19 @@ gulp.task('clean', function () {
 });
 
 
-gulp.task('react', function () {
-    gulp.src(['./app/components/*.js'])
-        .pipe(react())
-        .pipe(gulp.dest('./app/prod/'));
-
+gulp.task("symlink", function () {
+    return gulp.src('./app/')
+    .pipe(symlink('./node_modules/app/', {force:true}))
 });
 
 gulp.task('browserify', function () {
-    gulp.src(['./app/prod/*.js','!./app/components/*.js'])
-    .pipe(browserify())
+    var b = browserify();
+    b.transform(reactify); // use the reactify transform
+    b.add('./node_modules/app/components/app.js');
+    return b.bundle()
+      .pipe(source('app.js'))
         .pipe(rename('bundle.js'))
-    .pipe(gulp.dest('./'))
+      .pipe(gulp.dest('./'));
 });
 
-gulp.task('build', ['react', 'browserify']);
+gulp.task('build', ['clean', 'symlink','browserify']);
