@@ -14,7 +14,7 @@ A minimalist implmentation of Flux architetcure is included in this version. An 
    **$ = require('jquery')** in file ResourceMetadata.Web/node-modules/jquery-ui-browserify/index.js 
    to **$=require('jquery-browserify')**. 
 5. Execute gulp tasks
-    1. Run commands **gulp react** then **gulp browserify**.
+    1. Run commands **gulp build**.
     2. In order to clean the destination files created by build task, run **gulp clean**.
 
 
