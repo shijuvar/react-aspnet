@@ -3,6 +3,11 @@
 Demo app built with React and ASP.NET Web API. 
 A minimalist implmentation of Flux architetcure is included in this version. An enhanced version of Flux is coming.
 
+## Technologies
+
+* ASP.NET Web API
+* ReactJS
+
 ## Building the App
 
       
