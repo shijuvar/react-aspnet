@@ -19,7 +19,7 @@ A minimalist implmentation of Flux architetcure is included in this version. An 
 
 
 
-## About the sample App
+## About the Sample App
 
 The ReactJS app named "ResourceMetadata.Web" lets the users store metadata of the resources (articles, github repositories, files on the local computer etc.) with a priority. Based on the priority, users can follow the resources and add activities against the resources.
 
